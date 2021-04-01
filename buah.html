@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./exercise.js"></script>
+    <link href="./style.css" rel="stylesheet" />
+    <title>Fruits</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="./img/pepaya.jpg" alt="banana" style="width:70%">
+              <h4><b>Pepaya</b></h4> 
+              <ul>
+                <li>Name: Pepaya</li>
+                <li>Color: Oren</li>
+                <li>Latin Name: Carica Papaya</li>
+                <li>Type: Musaceae</li>
+                <li>Seed: Biji</li>
+              </ul>
+        </div>
+        <br>
+        <div class="card">
+            <img src="./img/jambu.jpg" alt="banana" style="width:70%">
+              <h4><b>Jambu Biji</b></h4> 
+              <ul>
+                <li>Name: Guava</li>
+                <li>Color: green</li>
+                <li>Latin Name: Psidium guajava</li>
+                <li>Type:  Myrtaceae</li>
+                <li>Seed: Biji</li>
+              </ul>
+        </div>
+        <br>
+        <div class="card">
+            <img src="./img/apel.jpg" alt="banana" style="width:70%">
+              <h4><b>Apel</b></h4> 
+              <ul>
+                <li>Name: Apel</li>
+                <li>Color: Merah</li>
+                <li>Latin Name: Malus domestica</li>
+                <li>Type: Musaceae</li>
+                <li>Seed: Biji</li>
+              </ul>
+        </div>
+        </div>
+    </div>
+  
+    <div class="container">
+      <div class="card">
+          <img src="./img/anggur.jpg" alt="anggur" style="width:70%">
+            <h4><b>Anggur</b></h4> 
+            <ul>
+              <li>Name: Anggur</li>
+              <li>Color: violet</li>
+              <li>Latin Name: Rosaceae</li>
+              <li>Type: Musaceae</li>
+              <li>Seed: Biji</li>
+            </ul>
+      </div>
+      <br>
+      <div class="card">
+          <img src="./img/mangga.jpg" alt="mangga" style="width:70%">
+            <h4><b>Mangga</b></h4> 
+            <ul>
+              <li>Name: Mangga</li>
+              <li>Color: Hijau</li>
+              <li>Latin Name: Mangifera indica</li>
+              <li>Type: Anacardiaceae</li>
+              <li>Seed: Biji</li>
+            </ul>
+      </div>
+      <br>
+      <div class="card">
+          <img src="./img/nanas.jpg" alt="nanas" style="width:70%">
+          <br>
+            <h4><b>Nanas</b></h4> 
+            <ul>
+              <li>Name: Nanas</li>
+              <li>Color: yellow</li>
+              <li>Latin Name: Ananas comosu</li>
+              <li>Type: Musaceae</li>
+              <li>Seed: Biji</li>
+            </ul>
+      </div>
+      </div>
+  </div>
+  <script>
+  const getDataBuah = async () => {
+  const image = "banana.jpg";
+  const option = {
+    method: "GET",
+  };
+  try {
+    let response = await fetch(image, option);
+    response = await response.json();
+    console.log(response);
+  } catch (response) {
+    console.log(response);
+  }
+};
+
+  </script>
+</body>
+</html>
